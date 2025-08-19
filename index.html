@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Elsafty - Hospitality Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #003087;
+      color: #fff;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 5px solid #d4af37;
+      margin-bottom: 15px;
+    }
+    .header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .header .contact {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+    .header .contact a {
+      color: #d4af37;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .header .contact a:hover {
+      text-decoration: underline;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #d4af37;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .download-btn:hover {
+      background: #b8860b;
+      transform: scale(1.05);
+    }
+    .download-btn i {
+      margin-right: 8px;
+    }
+    .section {
+      margin: 30px 0;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      color: #003087;
+      border-bottom: 2px solid #d4af37;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+    .section h2 i {
+      margin-right: 10px;
+      color: #d4af37;
+    }
+    .experience-list li {
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+    .experience-list li h3 {
+      color: #003087;
+      margin: 5px 0;
+    }
+    .experience-list li h3 i {
+      margin-right: 8px;
+      color: #d4af37;
+    }
+    .experience-list li p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .experience-list li ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      color: #666;
+    }
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill-tag {
+      background: #d4af37;
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+    .skill-tag:hover {
+      transform: scale(1.05);
+    }
+    .cert-list, .lang-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .cert-list li, .lang-list li {
+      margin: 10px 0;
+      position: relative;
+      padding-left: 30px;
+    }
+    .cert-list li:before, .lang-list li:before {
+      content: "\f058";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: #d4af37;
+      position: absolute;
+      left: 0;
+      font-size: 1.2em;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #003087;
+      color: #fff;
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+    footer a {
+      color: #d4af37;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .header {
+        padding: 20px;
+      }
+      .header img {
+        width: 120px;
+        height: 120px;
+      }
+      .header h1 {
+        font-size: 2em;
+      }
+      .container {
+        padding: 10px;
+      }
+      .section {
+        padding: 15px;
+      }
+      .experience-list li {
+        margin-bottom: 15px;
+      }
+      .skills-grid {
+        justify-content: center;
+      }
+    }
+    @media (max-width: 480px) {
+      .header .contact {
+        font-size: 1em;
+      }
+      .download-btn {
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://via.placeholder.com/150" alt="Ahmed Elsafty">
+      <h1>Ahmed Elsafty</h1>
+      <div class="contact">
+        GGICO Domus, Dubai | +971 50 595 3608 | <a href="mailto:Ahmedelsafty0022@gmail.com">Ahmedelsafty0022@gmail.com</a> | <a href="https://linkedin.com/in/ahmedelsafty">LinkedIn</a>
+      </div>
+      <a href="#" class="download-btn" onclick="downloadCV()" id="downloadLink"><i class="fas fa-download"></i> Download CV</a>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+      <p>Dynamic and results-oriented hospitality professional with over 6 years of experience in luxury hotel operations, front office management, and real estate sales. Proven expertise in managing multi-property operations, leveraging technologies like Opera Cloud and VICAS, and delivering exceptional guest experiences with 98%+ satisfaction ratings. Skilled in team leadership, crisis resolution, DTCM compliance, and driving efficiency in fast-paced environments.</p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+      <ul class="experience-list">
+        <li>
+          <h3><i class="fas fa-concierge-bell"></i> Cluster Guest Service Specialist</h3>
+          <p>Accor Group, Dubai, United Arab Emirates</p>
+          <p>July 2025 – Present</p>
+          <ul>
+            <li>Coordinated front office operations across 3+ Accor-branded properties, maintaining brand consistency and seamless guest journeys in high-volume environments.</li>
+            <li>Implemented Opera Cloud, VICAS, and Visionline systems to automate 40% of check-ins, slashing wait times by 30% and enhancing operational efficiency.</li>
+            <li>Managed VIP and group bookings (25+ guests), collaborating with housekeeping and F&B teams for flawless executions and high-profile client satisfaction.</li>
+            <li>Trained and certified 5+ team members on property management workflows, fostering cross-property collaboration and productivity gains.</li>
+          </ul>
+        </li>
+        <li>
+          <h3><i class="fas fa-moon"></i> Night Auditor / Guest Service Agent</h3>
+          <p>Icon Delux Hotel Apartments (4-star), Dubai, United Arab Emirates</p>
+          <p>December 2023 – June 2025</p>
+          <ul>
+            <li>Automated daily revenue reporting using Winhms software, reducing audit errors by 25% and ensuring financial accuracy during overnight shifts.</li>
+            <li>Resolved 90% of guest complaints in real-time, driving a 15% increase in repeat bookings and upholding 4-star service standards.</li>
+            <li>Oversaw security protocols via CCTV and access logs, preventing 3+ incidents in 2024 and maintaining a safe environment for guests and staff.</li>
+          </ul>
+        </li>
+        <li>
+          <h3><i class="fas fa-users"></i> Team Leader / Guest Service Agent</h3>
+          <p>Cleopatra Hotel (4-star), Sharm El Sheikh, Egypt</p>
+          <p>June 2022 – November 2022</p>
+          <ul>
+            <li>Led a team of 8 during peak occupancy (95% capacity), optimizing shift management and ensuring smooth operations under pressure.</li>
+            <li>Attained a 4.8/5 guest satisfaction rating on surveys, ranking in the top 10% regionally through proactive service and feedback implementation.</li>
+            <li>Onboarded and trained 10+ new hires on Opera PMS and service protocols, accelerating team integration and performance.</li>
+          </ul>
+        </li>
+        <li>
+          <h3><i class="fas fa-home"></i> Real Estate Agent</h3>
+          <p>REMAX Egypt, Alexandria, Egypt</p>
+          <p>December 2020 – May 2021</p>
+          <ul>
+            <li>Closed over $2M in sales and rental transactions, achieving top 15% performance in the office through targeted client outreach and negotiations.</li>
+            <li>Cultivated client relationships with personalized follow-ups, resulting in 30% repeat business and referrals.</li>
+          </ul>
+        </li>
+        <li>
+          <h3><i class="fas fa-reception"></i> Front Desk Agent</h3>
+          <p>Sunrise Hotel (5-star), Alexandria, Egypt</p>
+          <p>March 2018 – November 2020</p>
+          <ul>
+            <li>Handled 100+ daily reservations from OTAs and walk-ins, maintaining 90% occupancy rates in a competitive 5-star market.</li>
+            <li>Designed custom itineraries for VIP guests, increasing ancillary revenue from spa and restaurant services.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <p><strong>Bachelor’s Degree in Management Information Systems</strong><br>HICIS University, 2013 – 2017</p>
+      <p>Relevant Coursework: Business Communication, Database Management</p>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-tools"></i> Skills & Competencies</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">Opera Cloud</span>
+        <span class="skill-tag">VICAS</span>
+        <span class="skill-tag">Visionline</span>
+        <span class="skill-tag">Winhms</span>
+        <span class="skill-tag">Opera PMS</span>
+        <span class="skill-tag">VIP Handling</span>
+        <span class="skill-tag">Conflict Resolution</span>
+        <span class="skill-tag">Multilingual (Arabic/English)</span>
+        <span class="skill-tag">DTCM Compliance</span>
+        <span class="skill-tag">Night Auditing</span>
+        <span class="skill-tag">Multi-Property Management</span>
+        <span class="skill-tag">Team Training</span>
+        <span class="skill-tag">Crisis Management</span>
+        <span class="skill-tag">Real Estate Sales</span>
+        <span class="skill-tag">Revenue Reporting</span>
+        <span class="skill-tag">Security Oversight</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-certificate"></i> Certifications</h2>
+      <ul class="cert-list">
+        <li>DTCM Approved Front Office Training (2024)</li>
+        <li>ICDL Certification (2016)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><i class="fas fa-globe"></i> Languages</h2>
+      <ul class="lang-list">
+        <li>Arabic (Native)</li>
+        <li>English (Professional Proficiency)</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>© 2025 Ahmed Elsafty. All rights reserved.</p>
+      <p>GGICO Domus, Dubai | +971 50 595 3608 | <a href="mailto:Ahmedelsafty0022@gmail.com">Ahmedelsafty0022@gmail.com</a></p>
+    </footer>
+  </div>
+  <script>
+    function downloadCV() {
+      const content = `
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <title>Ahmed Elsafty CV</title>
+          <style>
+            body { font-family: 'Arial', sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
+            .header { text-align: center; padding: 20px; background: #003087; color: #fff; }
+            .header img { width: 100px; height: 100px; border-radius: 50%; border: 3px solid #d4af37; }
+            .header h1 { margin: 10px 0; }
+            .section { margin: 20px 0; padding: 15px; border-bottom: 1px solid #d4af37; }
+            .section h2 { color: #003087; margin-bottom: 10px; }
+            ul { padding-left: 20px; }
+            li { margin-bottom: 5px; }
+          </style>
+        </head>
+        <body>
+          <div class="header">
+            <img src="https://via.placeholder.com/100" alt="Ahmed Elsafty">
+            <h1>Ahmed Elsafty</h1>
+            <p>GGICO Domus, Dubai | +971 50 595 3608 | Ahmedelsafty0022@gmail.com | LinkedIn</p>
+          </div>
+          <div class="section">
+            <h2>Professional Summary</h2>
+            <p>Dynamic and results-oriented hospitality professional with over 6 years of experience in luxury hotel operations, front office management, and real estate sales. Proven expertise in managing multi-property operations, leveraging technologies like Opera Cloud and VICAS, and delivering exceptional guest experiences with 98%+ satisfaction ratings. Skilled in team leadership, crisis resolution, DTCM compliance, and driving efficiency in fast-paced environments.</p>
+          </div>
+          <div class="section">
+            <h2>Professional Experience</h2>
+            <ul>
+              <li><strong>Cluster Guest Service Specialist</strong><br>Accor Group, Dubai, UAE<br>July 2025 – Present<br>- Coordinated front office operations across 3+ Accor-branded properties, maintaining brand consistency.<br>- Implemented Opera Cloud, VICAS, and Visionline to automate 40% of check-ins, reducing wait times by 30%.<br>- Managed VIP bookings and trained 5+ team members on property management workflows.</li>
+              <li><strong>Night Auditor / Guest Service Agent</strong><br>Icon Delux Hotel Apartments (4-star), Dubai, UAE<br>December 2023 – June 2025<br>- Automated revenue reporting using Winhms, reducing audit errors by 25%.<br>- Resolved 90% of guest complaints in real-time, increasing repeat bookings by 15%.<br>- Oversaw security via CCTV, preventing 3+ incidents in 2024.</li>
+              <li><strong>Team Leader / Guest Service Agent</strong><br>Cleopatra Hotel (4-star), Sharm El Sheikh, Egypt<br>June 2022 – November 2022<br>- Led a team of 8 during 95% occupancy, optimizing shift management.<br>- Achieved a 4.8/5 guest satisfaction rating, ranking top 10% regionally.<br>- Trained 10+ new hires on Opera PMS and service protocols.</li>
+              <li><strong>Real Estate Agent</strong><br>REMAX Egypt, Alexandria, Egypt<br>December 2020 – May 2021<br>- Closed over $2M in sales and rentals, achieving top 15% office performance.<br>- Cultivated relationships, resulting in 30% repeat business.</li>
+              <li><strong>Front Desk Agent</strong><br>Sunrise Hotel (5-star), Alexandria, Egypt<br>March 2018 – November 2020<br>- Handled 100+ daily reservations, maintaining 90% occupancy.<br>- Designed VIP itineraries, increasing ancillary revenue.</li>
+            </ul>
+          </div>
+          <div class="section">
+            <h2>Education</h2>
+            <p><strong>Bachelor’s Degree in Management Information Systems</strong><br>HICIS University, 2013 – 2017<br>Relevant Coursework: Business Communication, Database Management</p>
+          </div>
+          <div class="section">
+            <h2>Skills & Competencies</h2>
+            <ul>
+              <li>Hospitality Technology: Opera Cloud, VICAS, Visionline, Winhms, Opera PMS</li>
+              <li>Guest Services: VIP Handling, Conflict Resolution, Multilingual Communication (Arabic/English)</li>
+              <li>Operations: DTCM Compliance, Night Auditing, Multi-Property Management</li>
+              <li>Leadership: Team Training, Crisis Management, Attention to Detail</li>
+              <li>Other: Real Estate Sales, Revenue Reporting, Security Oversight</li>
+            </ul>
+          </div>
+          <div class="section">
+            <h2>Certifications</h2>
+            <ul>
+              <li>DTCM Approved Front Office Training (2024)</li>
+              <li>ICDL Certification (2016)</li>
+            </ul>
+          </div>
+          <div class="section">
+            <h2>Languages</h2>
+            <ul>
+              <li>Arabic (Native)</li>
+              <li>English (Professional Proficiency)</li>
+            </ul>
+          </div>
+        </body>
+        </html>
+      `;
+      const blob = new Blob([content], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const link = document.getElementById('downloadLink');
+      link.href = url;
+      link.download = 'AhmedElsaftyCV.html';
+      link.click();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
